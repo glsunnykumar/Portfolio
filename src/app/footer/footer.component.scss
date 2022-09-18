@@ -1,0 +1,65 @@
+@import '../../scss/custom';
+@import '../../scss/components/mixing';
+
+.footer{
+    padding-top: auto;
+    background-color: $footer;
+}
+
+
+// STYLE THE CONTACT-BOX CONTENT
+.contact-box{
+    position: relative;
+
+    &__icon{
+            width:2rem;
+            stroke: $primary;
+
+           @include media-breakpoint-up(sm){
+            width:4rem;
+           }
+    }
+
+    &__info{
+        padding: 0.4rem;
+
+        &--title{
+            color: $white;
+            text-decoration: none;
+            font-size:1rem;
+
+            @include media-breakpoint-up(sm){
+                font-size:1.4rem;
+            }
+
+        }
+
+        &--subtitle{
+            font-size: 0.8rem;
+            color :$gray-300;
+            text-decoration: none;
+
+            @include media-breakpoint-up(sm){
+                font-size:1rem;
+            }
+        }
+    }
+}
+
+// STYLE THE SOCIAL MEDIA
+.footer-sm{
+    a{
+        color:$white;
+    }
+    i{
+        font-size: 1rem;
+        margin-left: 1rem;
+        @include media-breakpoint-up(sm){
+            font-size:1.7rem;
+        }
+
+        &:hover{
+            color :$primary;
+        }
+    }
+}

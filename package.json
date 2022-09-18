@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "compile:sass": "sass --watch scss:assests/css"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +21,11 @@
     "@angular/router": "^14.2.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@fortawesome/fontawesome-free": "^6.1.2",
+    "autoprefixer": "^10.4.8",
+    "bootstrap": "^5.2.0",
+    "postcss-cli": "^10.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.2",
@@ -33,6 +38,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "sass": "^1.54.3"
   }
 }

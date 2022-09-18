@@ -1,0 +1,10 @@
+@import '../styles.scss';
+
+$font-color: #fff;
+$background-color:#000;
+p {
+   color: $font-color;
+   background-color: $background-color;
+
+   @include absoluteCenter;
+}
